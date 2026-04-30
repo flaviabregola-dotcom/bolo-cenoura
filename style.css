@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de cores */
+:root {
+    --laranja: #f7941d;
+    --marrom: #4b2e2e;
+    --bege: #fdf5e6;
+}
+
+/* Tipografia */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bege);
+    color: var(--marrom);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: var(--laranja);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--marrom);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* Imagem */
+.imagem-receita img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+/* Botão */
+button {
+    background-color: var(--laranja);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid var(--marrom);
+    font-size: 0.9rem;
+}
+
+/* Responsividade básica */
+@media(max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    button {
+        width: 100%;
+    }
+}
